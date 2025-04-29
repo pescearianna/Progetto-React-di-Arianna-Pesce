@@ -1,6 +1,7 @@
-import {auth, provider} from "../config/firebase";
+import {auth, provider} from "../../config/firebase";
 import {signInWithPopup} from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { StyledLogin } from "./login.styled";
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -14,11 +15,11 @@ export const Login = () => {
 
 
     return (
-        <>
+        <StyledLogin>
         <h1>Login</h1>
         <p>Sign In With Google to continue</p>
         <button onClick={signInWithGoogle}>Sign In With Google</button>
-        </>
+        </StyledLogin>
         
     )
 };

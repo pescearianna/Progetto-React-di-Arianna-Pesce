@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { auth } from "../config/firebase";
+import { auth } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
-import { StyledNavbar } from "./styles/navbar.styled";
+import { StyledNavbar } from "./navbar.styled";
 
 export const Navbar = () => {
 
