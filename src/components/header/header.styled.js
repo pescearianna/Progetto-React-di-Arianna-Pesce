@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-
-background-color: rgba(5, 148, 161, 0.28); /* un poco translúcido */
-backdrop-filter: blur(5px);
-    padding: 0 2rem;
+    
+    background-color: #506D7F;
+    color: #F0F8F7;
+    backdrop-filter: blur(5px);
+    padding: 0 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left:0;
     width: 100%;
     z-index: 1;
 
-    img {
-        max-width: 80px;
-        max-height: 80px;
+    #logo {
+        height:10vh;
         border-radius: 5%;
     }
 `

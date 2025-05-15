@@ -1,44 +1,37 @@
 import styled from "styled-components";
 
 export const StyledButtonHero = styled.button `
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid #1A1A1A;
-  border-radius: 15px;
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #0d172a;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
+  
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
+  line-height: 1;
+  padding: 1rem 1.6rem;
   text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
-  will-change: transform;
 
-:disabled {
-  pointer-events: none;
-}
 
-:hover {
+&:hover {
+  background-color: #1e293b;
   color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
 }
 
-:active {
-  box-shadow: none;
-  transform: translateY(0);
+@media (min-width: 768px) {
+
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  
 }
 `

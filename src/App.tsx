@@ -14,20 +14,14 @@ import { ThemeProvider } from 'styled-components';
 import { Header } from './components/header/header';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { Footer } from './components/footer/footer';
+import { theme } from './styles/theme';
 
 
-const theme1 = {
-  colors: {
-    header:'transparent',
-    body: 'violet',
-    footer: 'light-blue'
-  }
-}
 
 
 function App() {
   return (
-    <ThemeProvider theme={theme1}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles/>
     <div className="App">
       <Router>

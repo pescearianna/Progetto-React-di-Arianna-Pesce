@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        background-color: bisque;
+        background-color: #E0F2FF;
         font-family: "Open Sans", sans-serif;
         margin: 0;
         overflow-x: hidden;
@@ -24,11 +24,11 @@ export const GlobalStyles = createGlobalStyle`
         background: transparent; }
 
         ::-webkit-scrollbar-thumb {
-        background: #fff300;
+        background:rgb(110, 128, 127);
         border-radius: 10px; }
 
         ::-webkit-scrollbar-thumb:hover {
-        background: #ffae17; }
+        background:rgb(66, 62, 71); }
 
     h1,h2,h3 {
         font-family: "Oswald", sans-serif;

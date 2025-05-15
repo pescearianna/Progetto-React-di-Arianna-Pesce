@@ -14,12 +14,17 @@ export const MeditationSelected = () => {
 
 return(
     <MeditationSelectedStyled>
-    <h2>Currently doing</h2>
-    <div>
-    <p>{medSelected.name}</p>
+        <div className="doing-med">
+    <p>Currently doing </p>
+    <h2>{medSelected.name}</h2>
+   
+    
     <p>{medSelected.instructions}</p>
+    
     </div>
+    <div className="timer-spot">
     <Countdown h={medSelected.time.h} m={medSelected.time.m} s={medSelected.time.s}></Countdown>
+    </div>
     </MeditationSelectedStyled>
 )
 }

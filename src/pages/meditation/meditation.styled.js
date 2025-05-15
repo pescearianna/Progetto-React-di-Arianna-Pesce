@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMeditation = styled.main`
-    margin: 10rem 10rem;
+    margin-top: 10rem;
     width: auto;
 
     h1{

@@ -2,13 +2,16 @@
 
 import { Benefits } from "./benefits"
 import { Hero } from "./hero"
-import { Steps } from "./steps"
+import {Intro} from "./intro"
+import { Steps } from "../../components/steps"
 
 
  export const Home = () => {
      return(
          <>
          <Hero/>
+
+         <Intro/>
          <Steps/>
          <Benefits/>
          

@@ -4,16 +4,20 @@ import { StyledHeader } from "./header.styled";
 import imgLogo from "../../assets/img/logo-celestial.png"
 
 
+
 export const Header = () => {
 
     return(
+        <>
         <StyledHeader>
     
-            <Link to="/"><img src={imgLogo} alt="logo" /></Link>
+            <Link to="/"><img id="logo" src={imgLogo} alt="logo" /></Link>
         
 
             <Navbar></Navbar>
-        
+            
         </StyledHeader>
+        
+        </>
     )
 }

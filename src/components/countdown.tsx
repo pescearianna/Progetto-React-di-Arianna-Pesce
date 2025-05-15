@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { StyledCountdown } from "./countdown.styled";
 
-  
+import dongTibet from '../assets/sounds/bell-ring.mp3';
+
+
 
 
 export const Countdown = ({h = 0, m = 20 ,s = 0}) => {
@@ -26,12 +28,14 @@ export const Countdown = ({h = 0, m = 20 ,s = 0}) => {
         resetCountdown.current = newTime;
       }, [h, m, s]);
 
-      
+          const playSound = () => {
+          const audio = new Audio(dongTibet);
+          audio.play();
+        };
       
           useEffect(() => {
             if (time === 0 ) {
-              const audio = new Audio("../assets/sounds/bell-ring.mp3");
-              audio.play()
+              playSound()
         
               setActive(false); // opzionale: fermare il timer
             }
@@ -56,7 +60,9 @@ const resetTimer = () => {
     return setTime(resetCountdown.current)
 }
 
-    
+
+
+
    
 
 return (
@@ -70,6 +76,7 @@ return (
     <div>
         <button onClick={startStop}> {active === true? 'STOP':'PLAY'} </button>
         <button onClick={resetTimer}> RESET </button>
+        
     </div>
     </StyledCountdown>
 )
