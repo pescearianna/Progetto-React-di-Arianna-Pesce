@@ -15,8 +15,8 @@ export const StyledNavbar = styled.nav`
         font-size: 1.5rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
-        color: ${({ theme }) => theme.colors.text};
-        font-weight: 600;
+        color: #E0F2FF;
+        
         text-decoration: none;
         position: relative;
         z-index: 1;

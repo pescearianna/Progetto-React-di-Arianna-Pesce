@@ -67,15 +67,15 @@ const resetTimer = () => {
 
 return (
     <StyledCountdown>
-    <h3>Timer:</h3>
+    
     <div className="content">
 
         <p>{displayTime.hours} : {displayTime.minutes} : {displayTime.seconds}</p>
         
     </div>
-    <div>
-        <button onClick={startStop}> {active === true? 'STOP':'PLAY'} </button>
-        <button onClick={resetTimer}> RESET </button>
+    <div className="commands">
+        <button className="command" id="play" onClick={startStop}> {active === true? <i className="bi bi-stop"></i>:<i className="bi bi-play"></i>} </button>
+        <button className="command" id="reset" onClick={resetTimer}><i className="bi bi-arrow-counterclockwise"></i></button>
         
     </div>
     </StyledCountdown>

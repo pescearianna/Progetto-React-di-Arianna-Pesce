@@ -16,9 +16,11 @@ export const Login = () => {
 
     return (
         <StyledLogin>
-        <h1>Login</h1>
-        <p>Sign In With Google to continue</p>
+        <h2 className="bigtitle">Login</h2>
+        <div className="section">
+        <p>Please, Sign In With Google to continue...</p>
         <button onClick={signInWithGoogle}>Sign In With Google</button>
+        </div>
         </StyledLogin>
         
     )

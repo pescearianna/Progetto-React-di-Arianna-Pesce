@@ -1,41 +1,120 @@
 import styled from "styled-components";
-
+import { device } from "../../styles/device";
+import { theme } from "../../styles/theme";
 
 export const MeditationMenuStyled =  styled.div`
-    
-    
-    padding: 1rem;
-    margin: 5rem;
+     
+     
+        display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+     
+
+      @media ${device.mobile} {
+        
+        display: block;
+        section{
+            
+            margin:1rem 0;
+
+            .info-wrap{
+        
+        
+                padding: 1rem 1.5rem;
+                }
+     }
+    }
+ 
 
 
    
     section{
-        margin: 3rem;
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
-    border: 2px solid black;
+        /* border: 2px solid black; */
         border-radius: 20px;
-    background-color:rgb(236, 236, 236);
-    img{
-        max-width: 100px;
-        max-height: 100px;
-     }
+        background-color:${({theme})=>theme.colors.white};
+        box-shadow: 3px 3px 10px ${({theme})=>theme.colors.obsc},
+        -3px -3px 10px ${({theme})=>theme.colors.obsc};
+        
+        img{
+            max-height: 6rem;
+        }
     
     .info-wrap{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         min-height: 100px;
         
-        padding: 0.5rem;
+        padding: 2rem 2.5rem;
+        h3{
+            margin: 1rem 0;
+        }
+
+        #timer {
+            margin: 1rem 0;
+            font-size: large;
+            
+        }
+
+        .meditationbutton{
+          
+            align-items: center;
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0,rgb(53, 207, 250) 0, #5468ff 100%);
+            border: 0;
+            border-radius: 20px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono",monospace;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
+
+
+            &:focus {
+            box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            }
+
+            &:hover {
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            transform: translateY(-2px);
+            }
+
+            &:active {
+            box-shadow: #3c4fe0 0 3px 7px inset;
+            transform: translateY(2px);
+            }
+}
+
+
+        }
         
     }
 
-    h3 {
-        padding: 2rem 0.5rem 0 0;
-    }
-}
+    
+
 
 `

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     
-    background-color: #506D7F;
-    color: #F0F8F7;
+    background-color:#212931;
+    color: #F8F8F8;
     backdrop-filter: blur(5px);
     padding: 0 6rem;
     display: flex;

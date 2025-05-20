@@ -2,29 +2,53 @@ import { useContext} from "react"
 import { Countdown } from "../../components/countdown"
 import { MedContext } from "./context/medcontext"
 import { MeditationSelectedStyled } from "./meditationselected.styled"
+import { signOut } from "firebase/auth"
+import { useAuthState } from "react-firebase-hooks/auth"
+import { auth } from "../../config/firebase"
 
 export const MeditationSelected = () => {
 
-    const { medSelected } = useContext(MedContext)
+    const { medSelected } = useContext(MedContext);
 
-    if (!medSelected) {
-        return <p>Seleziona una meditazione per iniziare!</p>; 
-      }
+     const [user] = useAuthState(auth);
+const signOutUser = async() => {
+    await signOut(auth);
+}
 
 
 return(
-    <MeditationSelectedStyled>
-        <div className="doing-med">
-    <p>Currently doing </p>
+
+      <MeditationSelectedStyled>
+        <div className="shadow">
+    { !medSelected ? (
+        <div className="box">
+            <div className="profileuser">
+                  <h3>Welcome {user?.displayName}!</h3>
+                  </div>
+                  <div className="choose">
+        <p>Choose a</p> 
+        <p>meditacion</p> 
+        <p>to start!</p>
+        <i className="bi bi-arrow-down"></i>
+        </div>
+        </div>
+    ) : (
+    <>
+    <div className="doing-med">
+    <img src={medSelected.emoji} alt="chakra meditation" />
     <h2>{medSelected.name}</h2>
    
     
-    <p>{medSelected.instructions}</p>
+    <p id="instr">{medSelected.instructions}</p>
     
     </div>
     <div className="timer-spot">
     <Countdown h={medSelected.time.h} m={medSelected.time.m} s={medSelected.time.s}></Countdown>
     </div>
+    </>
+    )
+}</div>
+        
     </MeditationSelectedStyled>
-)
+);
 }

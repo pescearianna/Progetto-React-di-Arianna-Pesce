@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "./navbar";
 import { StyledHeader } from "./header.styled";
-import imgLogo from "../../assets/img/logo-celestial.png"
+import imgLogo from "../../assets/img/logo-celestial.svg"
 
 
 

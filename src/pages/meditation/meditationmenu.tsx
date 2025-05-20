@@ -2,7 +2,7 @@
   import { useContext } from "react";
   import { MedContext } from "./context/medcontext";
 import { MeditationMenuStyled } from "./meditationmenu.styled";
-import chakraman from "../../assets/img/chakraman.jpg"
+
   
   export const MeditationMenu = () => {
     const { listmeditation, selectMeditationToDo } = useContext(MedContext);
@@ -14,13 +14,14 @@ import chakraman from "../../assets/img/chakraman.jpg"
       
 
           <section key={med.key}>
-            <img src={chakraman} alt="" />
+            
             <div className="info-wrap">
-            <p>{med.emoji}</p>
+            <img src={med.emoji} alt="chakra meditation" />
+            
             <h3>{med.name}</h3>
             <p>{med.description}</p>
-            <p>{med.time.h} : {med.time.m} : {med.time.s}</p>
-            <button onClick={() => selectMeditationToDo(med)}>Seleziona</button>
+            <p id="timer">{String(med.time.h).padStart(2, "0")} : {String(med.time.m).padStart(2, "0")} : {String(med.time.s).padStart(2, "0")}</p>
+            <button className="meditationbutton" onClick={() => selectMeditationToDo(med)}>START</button>
             </div>
           </section>
         ))}

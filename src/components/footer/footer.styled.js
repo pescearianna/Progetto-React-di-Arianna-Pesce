@@ -23,18 +23,34 @@ export const StyledFooter = styled.footer`
         div{
             min-width: 35%;
         }
+
+        .socialbox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    i {
+                        padding: 0 1rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+
     }
 
-    .socialbox{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+    
 
     .copyright{
         width: 100%;
         text-align: center;
-        padding: 1rem 0;
+        padding: 0.2rem 0;
+        font-size: smaller;
     }
 `

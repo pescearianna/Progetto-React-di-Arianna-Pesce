@@ -1,12 +1,12 @@
 import { StyledButtonHero } from "./buttonHero.styled"
 
-export const ButtonHero = ({buttonText} : any) => {
+export const ButtonHero = ({text} : any) => {
 
     
 
     return(
         <StyledButtonHero>
-        {buttonText}
+        {text}
         </StyledButtonHero>
     )
 }
