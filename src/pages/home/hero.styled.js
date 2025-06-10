@@ -1,85 +1,78 @@
 import styled from "styled-components";
-import imgBgHero from "../../assets/img/bg-home.jpg";
+import imgBgHeroD from "../../assets/img/hero-bg-desktop.jpg";
 import { device } from "../../styles/device";
+
+
 
 
 export const StyledHero = styled.div`
     height: 90vh;
     width: 100vw;
+     margin: -3rem -10rem;
     display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
     
     align-items: center;
     
-    .green-bg{
-        background-color:${({ theme }) => theme.colors.primary};
-        
-    }
-    
-
-    .bm{
-        height: 70vh;
-        width: 50vw;
-    border-radius: 0 50% 50% 0;
-    
-    }
-
-    .sm {
-        height: 1rem;
-        width: 200%;
-        margin: 0 -2rem;
-    }
+    background: url(${imgBgHeroD});
+    background-size: cover;
+    background-position: bottom;
 
     
-        
-        img{
-            max-height: 600px;
-        max-width: 600px;
-        
-        margin: -5rem 0 0 8rem;
-        }
-    
 
-    .fifty{
-        min-height: 10rem;
-    }
 
-    .hero-text{
-        margin-right: 8rem;
+.hero-text{
+    padding: -1rem;
+    gap: 1rem;
+        color: aliceblue;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-evenly;
-        width: inherit;
+        width: 100%;
+        font-size: larger;
+   
+        
         h1 {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        font-size: 5rem;
-        margin: 0.5rem 0 0.5rem 1rem;
+        text-shadow: 0px -5px 10px rgb(0, 0, 0), -5px 0px 10px rgb(0, 0, 0);
+        
         text-transform: uppercase;
             
         }
-        p{
-            font-size: 2rem;
-            margin: 0.5rem 0 0 -1rem;
-        }
-        #to {
-            margin: 0.5rem 0 0 0.50rem;
-        }
-        #claim{
-            margin: 0.5rem 0 0 0.50rem;
+        .cursive{
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
         }
 
  }
-       
 
-        @media ${device.mobile} {
-            
+ @media ${device.laptop} {
+        
+        
+        h1{
+            font-size: 5rem;
         }
+           
+          
+        
+    }
 
-
-
-   
-
-    
+  @media ${device.mobile} {
+        height: 70vh;
+        margin: -2rem;
+        .hero-text{
+            gap: 2rem;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+           
+          
+        
+    }
 
     
 

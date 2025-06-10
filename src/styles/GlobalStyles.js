@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { device } from "./device";
 
 export const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&display=swap');
 
     *{
         box-sizing: border-box;
@@ -49,26 +49,47 @@ export const GlobalStyles = createGlobalStyle`
         
 
     }
-    @media ${device.mobile}{
-        main{
-        margin: 2rem 2rem;
-
-    }
-        
-    }
-            
     
-
     .bigtitle {
         position: relative;
         top: 0;
         left: -5%;
-        z-index: 1;
+        z-index: -2;
         font-size: 7rem;
         font-weight: 600;
         color: #e0f2ff;
         text-shadow:-3px 3px #212931,3px 0 #212931,0 3px #212931,-3px 0 #212931,0 -3px #212931, 3px 3px #212931,3px -3px #212931, -3px -3px #212931, -6px -6px 8px #212931;
     }
+    #upper{
+        position: relative;
+        bottom: 2rem;
+        z-index: 0;
+    }
+
+    @media ${device.mobile}{
+        main{
+        margin: 2rem 2rem;
+
+    }
+        .bigtitle {
+        position: relative;
+        bottom: 0.8rem;
+        left: -5%;
+      
+        font-size: 4rem;
+        
+    }
+    #upper{
+      
+        bottom: 1rem;
+        
+    }
+    }
+            
     
+
+    
+
+   
     
     `

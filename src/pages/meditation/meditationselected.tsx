@@ -2,7 +2,7 @@ import { useContext} from "react"
 import { Countdown } from "../../components/countdown"
 import { MedContext } from "./context/medcontext"
 import { MeditationSelectedStyled } from "./meditationselected.styled"
-import { signOut } from "firebase/auth"
+
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../../config/firebase"
 
@@ -11,9 +11,7 @@ export const MeditationSelected = () => {
     const { medSelected } = useContext(MedContext);
 
      const [user] = useAuthState(auth);
-const signOutUser = async() => {
-    await signOut(auth);
-}
+
 
 
 return(
@@ -22,10 +20,10 @@ return(
         <div className="shadow">
     { !medSelected ? (
         <div className="box">
-            <div className="profileuser">
-                  <h3>Welcome {user?.displayName}!</h3>
-                  </div>
-                  <div className="choose">
+            
+        <h3 className="typewriter">Welcome {user?.displayName}!</h3>
+          
+        <div className="choose">
         <p>Choose a</p> 
         <p>meditacion</p> 
         <p>to start!</p>

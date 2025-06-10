@@ -8,7 +8,8 @@ position: relative;
     border: 2px solid transparent;
     min-height: 80vh;
     border-radius: 0 0 50px 50px;
-    background-color: whitesmoke;
+    background-color:  #E0F2FF;
+
 
 
  
@@ -20,7 +21,7 @@ position: relative;
 
 
 
-        .shadow {
+        /* .shadow {
         
         &::before, &::after {
             content:'';
@@ -32,16 +33,16 @@ position: relative;
             height: calc(99% + 6px);
             background: linear-gradient(
             45deg, 
-            #fb0094, 
+rgb(138, 0, 251), 
             #0000ff, 
-            #00ff00, 
-            #ffff00, 
-            #ff0000, 
-            #fb0094, 
-            #0000ff, 
-            #00ff00, 
-            #ffff00, 
-            #ff0000
+        
+ 
+         
+      rgb(138, 0, 251),  
+            #0000ff
+ 
+
+    
             );
             background-size: 400%;
             z-index:-1;
@@ -69,8 +70,15 @@ position: relative;
             100% {
                 background-position: 0 0;
             }
-            }
+            } */
 
+
+            h3{
+                padding-top: 2rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+    
 
 
         .choose p,.choose i{
@@ -97,7 +105,10 @@ position: relative;
 .doing-med{
     width: 60%;
     min-height: 50vh;
-    background-color: #6C9BCF;
+    
+    border-left: 4px double;
+    border-right: 4px double;
+    border-radius: 50% 50% 10% 10%;
         margin: 0 auto;
         padding: 2rem;
     
@@ -105,7 +116,7 @@ position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 0.5rem;
+    
     img{
         height: 7rem;
     }
@@ -114,15 +125,6 @@ position: relative;
     }
 }
 
-.profileuser{
-    height: 50px;
-    width: 50px;
-    border: 2px solid red;
-    position: sticky;
-    top:3rem;
-    right: 3rem;
-    z-index: 3;
-}
 
 
 

@@ -8,6 +8,7 @@ export const MeditationMenuStyled =  styled.div`
         display: grid;
     grid-template-columns: auto auto;
     gap: 1.5rem;
+    margin: 1rem;
      
 
       @media ${device.mobile} {
@@ -112,6 +113,26 @@ export const MeditationMenuStyled =  styled.div`
 
         }
         
+    }
+
+
+    .personal-time-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       padding: 1rem 0;
+       font-size: large;
+       .setting-time{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.4rem;
+        button{
+            padding: 0.2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+        }
+       }
     }
 
     

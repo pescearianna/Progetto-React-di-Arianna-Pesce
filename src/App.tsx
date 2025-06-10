@@ -7,7 +7,7 @@ import { Meditation } from "./pages/meditation/meditation";
 import { About } from "./pages/about";
 import {Contact } from "./pages/contact";
 // import { Navbar } from "./components/header/navbar";
-import { CreatePost } from "./pages/create-post/create-post";
+
 import { Home } from './pages/home/home';
 
 import { ThemeProvider } from 'styled-components';
@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/createpost" element={<CreatePost/>}/>
+          
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>

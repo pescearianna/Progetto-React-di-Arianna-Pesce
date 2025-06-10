@@ -1,17 +1,32 @@
 import styled from "styled-components";
+import { device } from "../../styles/device";
+
 
 export const StyledFooter = styled.footer`
     width: 100vw;
-    background-color: #212931;
-    color: #F8F8F8;
+    background-color: ${({theme}) => theme.colors.menu};
+    color: ${({theme}) => theme.colors.white};
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0.5rem 5rem;
+    
+    
+    @media ${device.mobile} {
+        padding: 0.5rem 1rem;
+        .middle{
+            flex-direction:column;
+            gap: 0;
+        }
+}
 
     h4 {
         padding: 1rem 0;
+    }
+
+    a{
+        color: ${({theme}) => theme.colors.white};
     }
     
     .middle{
@@ -53,4 +68,9 @@ export const StyledFooter = styled.footer`
         padding: 0.2rem 0;
         font-size: smaller;
     }
+
+
+
+
+
 `

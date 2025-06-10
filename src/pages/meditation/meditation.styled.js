@@ -3,12 +3,9 @@ import styled from "styled-components";
 export const StyledMeditation = styled.main`
     margin-top: 0;
     width: auto;
+    
 
-    h1{
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 3rem;
-    }
+   
 
     .item1{
         background-color: pink;

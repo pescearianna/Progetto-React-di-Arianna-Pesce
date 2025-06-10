@@ -1,32 +1,12 @@
 import styled from "styled-components";
 import { device } from "../styles/device";
+import arrow from "../assets/img/arrow.jpg";
 
 
 export const StyledAbout = styled.main`
     background-image: url("../assets/img/wwwatercolor.jpg");
     margin: 3rem 10rem; 
 
-.wrapper {
-  position: relative;
-
-
-    h1 {
-        position: relative;
-        top: 0;
-        left: -5%;
-        z-index: 1;
-        font-size: 7rem;
-        font-weight: 600;
-        color: #e0f2ff;
-        text-shadow:-3px 3px #212931,3px 0 #212931,0 3px #212931,-3px 0 #212931,0 -3px #212931, 3px 3px #212931,3px -3px #212931, -3px -3px #212931, -6px -6px 8px #212931;
-        
-    }
-    #upper{
-        position: relative;
-        top:-5rem;
-        z-index: 2;
-    }
-}
 
     .photodet {
         width: 50%;
@@ -52,6 +32,7 @@ export const StyledAbout = styled.main`
         justify-content: space-between;
         align-items: flex-start;
         gap: 3rem;
+        box-shadow: 3px 3px 3px #212931, -3px -3px 3px #212931;
         
 
         img {
@@ -75,6 +56,7 @@ export const StyledAbout = styled.main`
         padding: 2rem 3rem;
         background-color: white;
         border-radius: 20px;
+        box-shadow: 3px 3px 3px #212931, -3px -3px 3px #212931;
         
     }
 
@@ -99,9 +81,11 @@ export const StyledAbout = styled.main`
         text-align: center;
         font-size: larger;
         #joinbtn{
-            height: 250px;
-            background-color: blue;
-            
+            height: 60vh;
+           background-image: url(${arrow});
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -117,15 +101,21 @@ export const StyledAbout = styled.main`
        margin: 2rem 2rem; 
     }
 
-    @media ${device.mobile} {
+    @media ${device.tabletMini} {
         margin: 0 1rem;
         padding: 1rem;
         .section{
             margin:0;
+            flex-direction: column-reverse;
+            .photodet{
+                width: 100%;
+                height: auto;
+            }
         }
         .none{
             display: none;
         }
+        
         #behindtheproject{
             margin-top: 2rem;
         }

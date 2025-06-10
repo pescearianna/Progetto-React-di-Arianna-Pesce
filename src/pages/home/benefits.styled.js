@@ -1,10 +1,36 @@
 import styled from 'styled-components';
+import { device } from '../../styles/device';
+import imgMeditation from "../../assets/img/meditazione-donna.png"
 
 export const StyledBenefits = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+   
+    background-image: url(${imgMeditation});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom ;
+   
+
+    @media ${device.laptop} { 
+        height: 60vh;
+        div{
+        width: 40%;
+    }
+    }
+
+     @media ${device.mobile} {
+        flex-direction: column;
+         height: 130vh;
+         background-position-y: center ;
+        div{
+        width: 100%;
+    }
+    }
+    
 
     .post {
         height: 400px;
@@ -21,6 +47,9 @@ export const StyledBenefits = styled.div`
         h3{
             font-size: 2rem;
             padding-bottom: 1rem;
+        }
+        .bold{
+            font-weight: bold;
         }
     }
 

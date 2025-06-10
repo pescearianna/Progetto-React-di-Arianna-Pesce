@@ -1,25 +1,52 @@
 import styled from "styled-components";
+import { device } from "../../styles/device";
 
 export const StyledNavbar = styled.nav`
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    position: relative; 
-    overflow: visible;
-    
-  
+
+      @media ${device.tabletMini} {
+        position: relative;
+          button{
+            height: 2.4rem;
+            width: 2.4rem;
+            background-color: transparent;
+            border: none;
+            
+            i{
+              color: ${({theme}) => theme.colors.white};
+              font-size: 2.2rem;
+            }
+          }
+
+        
+          .menu-link{
+          position: fixed;
+          top: 4rem;
+          left: 0;
+          width: 100vw;
+          padding: 3rem;
+          background-color: ${({theme}) => theme.colors.menu};
+          color: ${({theme}) => theme.colors.white};
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          z-index: 300;
+          overflow-x: hidden;
+          }
+        }
+   
+   
     a {
         padding: 0 1rem;
         font-size: 1.5rem;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
-        color: #E0F2FF;
+        color: ${({theme}) => theme.colors.white};
         
         text-decoration: none;
         position: relative;
-        z-index: 1;
+        z-index: 5;
         transition: color 0.3s;
         &:after {
             content: "";
@@ -50,35 +77,6 @@ export const StyledNavbar = styled.nav`
        
     }
 
-    .user-box{
-        border: 3px solid red;
-        border-radius: 50px;
-    }
-
-    /* Media query para tablets */
-  /* @media (max-width: 768px) {
-    a {
-      font-size: 1.2rem;
-      padding: 0 0.7rem;
-    }
-  }
-
-  /* Media query para móviles */
-  @media (max-width: 480px) {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-
-    a {
-      font-size: 1rem;
-      padding: 0.5rem 0;
-      display: block;
-    }
-
-    .user-box {
-      margin-top: 1rem;
-    }
-  } */
 
 
 `

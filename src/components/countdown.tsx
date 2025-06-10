@@ -6,7 +6,7 @@ import dongTibet from '../assets/sounds/bell-ring.mp3';
 
 
 
-export const Countdown = ({h = 0, m = 20 ,s = 0}) => {
+export const Countdown = ({h = 0, m = 0 ,s = 5}) => {
   
     let [active, setActive] = useState(false)
 
@@ -74,6 +74,7 @@ return (
         
     </div>
     <div className="commands">
+        <button className="command" id="volumeup"><i className="bi bi-volume-up-fill"></i></button>
         <button className="command" id="play" onClick={startStop}> {active === true? <i className="bi bi-stop"></i>:<i className="bi bi-play"></i>} </button>
         <button className="command" id="reset" onClick={resetTimer}><i className="bi bi-arrow-counterclockwise"></i></button>
         

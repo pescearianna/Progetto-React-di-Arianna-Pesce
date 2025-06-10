@@ -1,11 +1,11 @@
 import { StyledButtonHero } from "./buttonHero.styled"
 
-export const ButtonHero = ({text} : any) => {
+export const ButtonHero = ({text, onClick} : any) => {
 
     
 
     return(
-        <StyledButtonHero>
+        <StyledButtonHero onClick={onClick}>
         {text}
         </StyledButtonHero>
     )

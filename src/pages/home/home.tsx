@@ -2,20 +2,17 @@
 
 import { Benefits } from "./benefits"
 import { Hero } from "./hero"
-import {Intro} from "./intro"
+
 import { Steps } from "../../components/steps"
 
 
  export const Home = () => {
      return(
-         <>
-         <Hero/>
+        <main>
+        <Hero/>
+        <Steps/>
 
-         <Intro/>
-         <Steps/>
-         <Benefits/>
-         
-         
-         </>
+        <Benefits/>
+        </main>
      )
  }

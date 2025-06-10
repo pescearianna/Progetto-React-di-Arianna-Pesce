@@ -1,6 +1,6 @@
 
 
-import { Steps } from '../components/steps';
+
 import { StyledAbout } from './about.styled';
 import meditatiowoman from '../assets/img/woman-about.jpg';
 import photobuddha from '../assets/img/buddha-templio.jpg';
@@ -8,22 +8,32 @@ import phototemplio1 from '../assets/img/monje-templio.jpg';
 import photocele from '../assets/img/cele-templio.jpg';
 import photocele1 from '../assets/img/cele-meditando.jpg';
 import { ButtonHero } from '../components/button/buttonHero';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const About = () => {
+
+const navigate = useNavigate();
+
+const goToMed = () => {
+     console.log("Navigazione in corso...");
+    navigate("/meditation"); // cambia con la rotta desiderata
+  };
+
+
     return (
         <StyledAbout>
-            <div className='wrapper'>
-        <h1>ABOUT US</h1>
-        <div className='section espacio' id='upper'>
-            <img className='photodet none' src={photocele1} alt="medditation woman"/>
+            
+        <h1 className='bigtitle'>ABOUT US</h1>
+        <div className='section' id='upper'>
+            <img className='photodet' src={photocele1} alt="medditation woman"/>
             <div>
                 <h2>WHO WE ARE</h2>
                 <p>Celestial is a mindful space created for those seeking peace, presence, and connection. We are a growing community of individuals who believe in the power of conscious breathing, meditation, and emotional support. Our mission is to help people integrate mindfulness into their daily lives through simple, meaningful practices. Whether you are just beginning or have been meditating for years, Celestial welcomes you with open arms. We believe that everyone’s journey is unique, and we celebrate progress, not perfection. Together, we hold space for stillness, awareness, and personal growth.</p>
             </div>
         </div>
-        </div>
+        
 
        
 
@@ -51,7 +61,7 @@ export const About = () => {
         <div id='joinit' className='espacio'>
             <h3>JOIN THE COMMUNITY</h3>
             <p>What are you waiting for? Come with us!</p>
-            <div id='joinbtn'><ButtonHero text={"LOG IN"}></ButtonHero></div>
+            <div id='joinbtn'><ButtonHero text={"PERSONAL AREA"} onClick={goToMed}></ButtonHero></div>
         </div>
 
         </StyledAbout>
