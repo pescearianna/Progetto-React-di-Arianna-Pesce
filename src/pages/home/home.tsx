@@ -1,8 +1,5 @@
-// import { DailyQuotes } from "../components/dailyquotes"
-
 import { Benefits } from "./benefits"
 import { Hero } from "./hero"
-
 import { Steps } from "../../components/steps"
 
 
@@ -11,7 +8,6 @@ import { Steps } from "../../components/steps"
         <main>
         <Hero/>
         <Steps/>
-
         <Benefits/>
         </main>
      )

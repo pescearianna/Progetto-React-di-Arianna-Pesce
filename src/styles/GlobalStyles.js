@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { device } from "./device";
+import imgBgHeroD from "../assets/img/hero-bg-desktop.webp";
 
 export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&display=swap');
@@ -66,6 +67,15 @@ export const GlobalStyles = createGlobalStyle`
         z-index: 0;
     }
 
+     @media ${device.tabletMini}{
+        main{
+            margin: 3rem;
+        }
+        .bigtitle{
+            font-size: 5rem;
+        }
+     }
+
     @media ${device.mobile}{
         main{
         margin: 2rem 2rem;
@@ -75,21 +85,18 @@ export const GlobalStyles = createGlobalStyle`
         position: relative;
         bottom: 0.8rem;
         left: -5%;
-      
         font-size: 4rem;
         
     }
     #upper{
-      
         bottom: 1rem;
-        
     }
     }
             
-    
-
-    
-
-   
-    
-    `
+    #back-sky{
+    background-image: url(${imgBgHeroD});
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 -10rem;
+}
+    `;

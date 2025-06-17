@@ -5,6 +5,7 @@ export const theme = {
       menu: '#020713',
       white: '#F8F8F8',
       cel: '#6C9BCF',
+      btn: '#4384C4'
       
     },
   };
