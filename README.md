@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+<div align='center'>
+    <img src="./src/assets/img/logo-celestial.svg" alt="Logo Celestial" style='margin: 20px auto; width:200px'>
+        <h1>Celestial | React Project - Arianna Pesce</h1>   
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align='center'>
+<p>
+  <a href="#description">Description</a> •
+  <a href="https://celestial-b4bee.web.app">Visit the Website --> Celestial</a> •
+    <a href="#technologies-Used">Technologies Used</a> •
+  <a href="#contact">Contact</a>
+</p>
+</div>
 
-## Available Scripts
+![screenshot](./src/assets/img/screen-celestial.JPG)
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description  
 
-### `npm test`
+**Celestial** is a web application developed with **React**, designed to guide users through moments of meditation and mindful breaks. The project offers a simple, accessible, and responsive interface that allows users to customize their meditation sessions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--> [Visit the site](https://celestial-b4bee.web.app)
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Main Features
+- 🧘 Customizable timer: easily set the duration of your meditation.
+- ⏸️ Full timer control: pause and resume your session at any time.
+- 📱 Responsive design: accessible and enjoyable on any device.
+- 🧭 Smooth user experience: minimal and intuitive interface designed to support focus and calm.
+- 🧩 Organized code structure: clear, modular components that are easy to extend.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used  
+ 
+- [React](https://reactjs.org/)
+- HTML5 / CSS3
+- JavaScript (ES6+)
 
-### `npm run eject`
+---  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> GitHub [@pescearianna](https://github.com/pescearianna) &nbsp;&middot;&nbsp;
+> LinkedIn [Arianna Pesce](https://www.linkedin.com/in/ariannapesce/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
