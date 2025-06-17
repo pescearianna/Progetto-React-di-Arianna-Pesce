@@ -25,12 +25,13 @@
 --> [Visit the site](https://celestial-b4bee.web.app)
 
 <br>
+
 ## ✨ Main Features
-🧘 Customizable timer: easily set the duration of your meditation.
-⏸️ Full timer control: pause and resume your session at any time.
-📱 Responsive design: accessible and enjoyable on any device.
-🧭 Smooth user experience: minimal and intuitive interface designed to support focus and calm.
-🧩 Organized code structure: clear, modular components that are easy to extend.
+- 🧘 Customizable timer: easily set the duration of your meditation.
+- ⏸️ Full timer control: pause and resume your session at any time.
+- 📱 Responsive design: accessible and enjoyable on any device.
+- 🧭 Smooth user experience: minimal and intuitive interface designed to support focus and calm.
+- 🧩 Organized code structure: clear, modular components that are easy to extend.
 
 ---  
 
