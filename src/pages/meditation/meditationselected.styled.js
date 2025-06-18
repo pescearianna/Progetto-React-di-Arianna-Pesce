@@ -37,23 +37,6 @@ export const MeditationSelectedStyled = styled.div`
     }
   }
 
-  /* @media (min-width: 765px) {
-    .choose {
-     
-      margin: 1rem 6rem;
-      
-    }
-    .doing-med {
-      background: rgba(224, 251, 255, 0.59);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(11.6px);
-      -webkit-backdrop-filter: blur(11.6px);
-      border: 1px solid rgba(224, 251, 255, 0.49);
-      margin: 5rem 11rem 0;
-      padding: 4rem;
-    }
-  } */
 
   @media ${device.tabletMini}{
     .doing-med {
