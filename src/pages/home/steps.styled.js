@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { device } from "../styles/device";
+import { device } from "../../styles/device";
 
 export const StyledSteps = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  top: 0;
+  top: -30px;
 
   img {
     border: 2px double #01040b;

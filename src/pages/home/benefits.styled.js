@@ -3,10 +3,11 @@ import { device } from "../../styles/device";
 import imgMeditation from "../../assets/img/meditazione-donna.webp";
 
 export const StyledBenefits = styled.div`
+  margin: 2rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 2rem 0;
+  
   background-image: url(${imgMeditation});
   background-size: contain;
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@ export const StyledBenefits = styled.div`
     flex-direction: column;
     gap:20rem;
     background-position-y: 20rem;
-
+    margin: 1rem 1rem 2rem;
     div {
       width: 100%;
     }

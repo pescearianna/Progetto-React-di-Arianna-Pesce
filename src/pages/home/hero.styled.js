@@ -5,7 +5,7 @@ import { device } from "../../styles/device";
 export const StyledHero = styled.div`
   height: 90vh;
   width: 100vw;
-  margin: -3rem -10rem;
+  /* margin: -3rem -10rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ export const StyledHero = styled.div`
   }
 
   @media ${device.tablet} {
-    margin: -3rem -5rem;
+    /* margin: -3rem -5rem; */
    h1 {
       font-size: 5rem;
     }
@@ -60,14 +60,14 @@ export const StyledHero = styled.div`
     h1 {
           font-size: 3rem;
         }
-    margin: -3rem -3rem;
+    /* margin: -3rem -3rem; */
    
   }
 
 
   @media ${device.mobile} {
     height: 90vh;
-    margin: -2rem;
+    /* margin: -2rem; */
     .hero-text {
       gap: 2rem;
     }

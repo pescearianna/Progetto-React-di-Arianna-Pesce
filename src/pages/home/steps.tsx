@@ -1,6 +1,6 @@
-import imgStep1 from "../assets/img/step1.webp";
-import imgStep2 from "../assets/img/step2.webp";
-import imgStep3 from "../assets/img/step3.webp";
+import imgStep1 from "../../assets/img/step1.webp";
+import imgStep2 from "../../assets/img/step2.webp";
+import imgStep3 from "../../assets/img/step3.webp";
 import { StyledSteps } from "./steps.styled";
 
 export const Steps = () => {

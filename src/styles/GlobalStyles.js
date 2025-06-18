@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { device } from "./device";
 import imgBgHeroD from "../assets/img/hero-bg-desktop.webp";
+import imgBgHeroM from "../assets/img/hero-bg-mobile.webp";
 
 export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&display=swap');
@@ -9,6 +10,8 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+           /* outline: 1px solid red; */
+        
 
     }
 
@@ -17,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: "Open Sans", sans-serif;
         margin: 0;
         overflow-x: hidden;
+        width: 100%;
     }
 
         ::-webkit-scrollbar {
@@ -38,13 +42,13 @@ export const GlobalStyles = createGlobalStyle`
 
 
     @media ${device.laptop}{
-        main{
+        .mar{
         margin: 3rem 10rem;
     }
     }
 
     @media ${device.tablet}{
-        main{
+        .mar{
         margin: 3rem 5rem;
     }
         
@@ -68,7 +72,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
      @media ${device.tabletMini}{
-        main{
+        .mar{
             margin: 3rem;
         }
         .bigtitle{
@@ -77,7 +81,7 @@ export const GlobalStyles = createGlobalStyle`
      }
 
     @media ${device.mobile}{
-        main{
+        .mar{
         margin: 2rem 2rem;
 
     }
@@ -97,6 +101,15 @@ export const GlobalStyles = createGlobalStyle`
     background-image: url(${imgBgHeroD});
     background-size: cover;
     background-position: bottom;
-    margin: 0 -10rem;
+    /* margin: 0 -10rem; */
+
+        @media ${device.mobile} {
+            #back-sky{
+                background-image: url(${imgBgHeroM});
+            }
+            
+        }
+
+
 }
     `;

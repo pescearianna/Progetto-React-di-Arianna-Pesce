@@ -6,7 +6,7 @@ export const UserBoxStyled = styled.div`
   width: 10%;
   position: fixed;
   top: 3.5rem;
-  right: 1.3rem;
+  right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: end;

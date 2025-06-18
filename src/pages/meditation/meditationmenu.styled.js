@@ -5,10 +5,11 @@ export const MeditationMenuStyled = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 1.5rem;
-  margin: 2rem 1rem;
+  margin: 3rem 10rem;
 
   @media ${device.tabletMini} {
     display: block;
+    margin: 2rem 1rem;
     section {
       margin: 1rem 0;
 
