@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "../styles/device";
 
 export const ContactStyled = styled.main`
+ margin: 3rem 10rem;
   .sec {
     background-color: #f8f8f8;
     color: #212931;
@@ -61,6 +62,10 @@ export const ContactStyled = styled.main`
   @media ${device.tabletMini} {
     /* margin: 0 1rem;
     padding: 1rem; */
+      margin: 3rem 1.5rem;
+      .bigtitle{
+        left: -2%;
+      }
     .sec {
       flex-direction: column;
       padding: 1rem 1.3rem;

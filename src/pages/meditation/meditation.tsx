@@ -101,8 +101,16 @@ export const Meditation = () => {
 
   const [medSelected, setMedSelected] = useState();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Aggiunge uno scorrimento animato
+    });
+  };
+
   const selectMeditationToDo = (med: any) => {
     setMedSelected(med);
+    scrollToTop();
   };
 
   const [user] = useAuthState(auth);

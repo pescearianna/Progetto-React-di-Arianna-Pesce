@@ -5,28 +5,29 @@ import { device } from "../../styles/device";
 export const StyledMeditation = styled.main`
   margin-top: 0;
   width: auto;
+   overflow-x: hidden;
 
   @media ${device.laptop} {
-    background: #000000;
+   
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 35%,
       rgba(224, 242, 255, 1) 100%
     );
     margin: 0 0 0;
-    padding: 0 10rem;
+    /* padding: 0 10rem; */
     #back-sky {
       height: 100vh;
       background-image: url(${imgBgHeroD});
       background-size: cover;
       background-position: bottom;
-      margin: 0 -10rem;
+      /* margin: 0 -10rem; */
     }
   }
 
   @media ${device.tablet} {
     #back-sky{
-      margin: 0 -5rem;
+      /* margin: 0 -5rem; */
       height: 100vh;
     }
   }
