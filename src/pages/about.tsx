@@ -7,7 +7,7 @@ import photocele1 from "../assets/img/cele-meditando.webp";
 import { ButtonHero } from "../components/button/buttonHero";
 import { useNavigate } from "react-router-dom";
 
-export const About = () => {
+const About = () => {
   const navigate = useNavigate();
 
   const goToMed = () => {
@@ -91,3 +91,5 @@ export const About = () => {
     </StyledAbout>
   );
 };
+
+export default About;

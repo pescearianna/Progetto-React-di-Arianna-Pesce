@@ -16,7 +16,7 @@ import chakra7 from "../../assets/img/chakras/chakra7.webp";
 import buddha from "../../assets/img/logo-celestial.svg";
 import { UserBox } from "../login/userbox";
 
-export const Meditation = () => {
+const Meditation = () => {
   const listmeditation = [
     {
       key: 0,
@@ -140,3 +140,5 @@ export const Meditation = () => {
     </StyledMeditation>
   );
 };
+
+export default Meditation;

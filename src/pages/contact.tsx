@@ -2,7 +2,7 @@ import { ContactStyled } from "./contact.styled";
 import Swal from "sweetalert2";
 import { ButtonHero } from "../components/button/buttonHero";
 
-export const Contact = () => {
+const Contact = () => {
   const onSubmit = async (event: any) => {
     event.preventDefault();
 
@@ -39,9 +39,9 @@ export const Contact = () => {
     <ContactStyled>
       <h1 className="bigtitle">CONTACT</h1>
       <div className="sec" id="upper">
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="Contact form">
           <div className="input-box">
-            <label htmlFor="name">Full Name</label>
+            <label id="namesronly" htmlFor="name">Full Name</label>
             <input
               type="text"
               id="name"
@@ -50,10 +50,13 @@ export const Contact = () => {
               name="name"
               autoComplete="Off"
               required
+              aria-required="true"
+              aria-label="Your name"
+              aria-describedby="namesronly"
             ></input>
           </div>
           <div className="input-box">
-            <label htmlFor="email">Email adress</label>
+            <label id="emailsronly" htmlFor="email">Email adress</label>
             <input
               type="email"
               id="email"
@@ -62,10 +65,13 @@ export const Contact = () => {
               name="email"
               autoComplete="Off"
               required
+              aria-required="true"
+              aria-label="Your email"
+              aria-describedby="emailsronly"
             ></input>
           </div>
           <div className="input-box">
-            <label htmlFor="message">Your message</label>
+            <label id="messageronly" htmlFor="message">Your message</label>
             <textarea
               name="message"
               id="message"
@@ -73,6 +79,9 @@ export const Contact = () => {
               aria-placeholder="Enter your message"
               autoComplete="Off"
               required
+               aria-required="true"
+              aria-label="Your message to send"
+              aria-describedby="messagesronly"
             ></textarea>
           </div>
           <ButtonHero
@@ -101,3 +110,5 @@ export const Contact = () => {
     </ContactStyled>
   );
 };
+
+export default Contact;
