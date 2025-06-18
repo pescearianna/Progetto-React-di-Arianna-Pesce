@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { device } from "../../styles/device";
 
 export const StyledLogin = styled.div`
-  margin: 0 0 -5rem;
-  padding: 2rem;
+
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;

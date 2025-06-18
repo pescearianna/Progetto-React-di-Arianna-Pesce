@@ -63,7 +63,7 @@ export const MeditationSelectedStyled = styled.div`
       backdrop-filter: blur(11.6px);
       -webkit-backdrop-filter: blur(11.6px);
       border: 1px solid rgba(224, 251, 255, 0.49);
-      margin: 5rem 5rem 0;
+      margin: 1rem 3rem 0;
       padding: 2rem;
     }
   }
@@ -76,7 +76,7 @@ export const MeditationSelectedStyled = styled.div`
       backdrop-filter: blur(11.6px);
       -webkit-backdrop-filter: blur(11.6px);
       border: 1px solid rgba(224, 251, 255, 0.49);
-      margin: 5rem 9rem 0;
+      margin: 1rem 1rem 0;
       padding: 1rem;
     }
   }
